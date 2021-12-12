@@ -50,10 +50,10 @@ body {
   margin-top: -40vh;
 }
 .fifth {
-  height:90vh;
+  height:88.5vh;
   background-color:#0e1111;
-  margin-top:-92.3vh;
-  width: 58vh;
+  margin-top:-83.3vh;
+  width: 56.5vh;
   margin-left: 125vh;
 }
 .temp {
@@ -90,6 +90,16 @@ body {
   background-color: black;
   color:white;
 }
+.yikes {
+  position: relative;
+  top:20px;
+}
+table, th, td {
+  margin-right:10px;
+}
+td{
+  margin-right:15px;
+}
 </style>
 </head>
 <body>
@@ -106,9 +116,13 @@ body {
           <p style="margin-top:-7vh; margin-left: 10vh; font-size:120%;">Weather</p>
           <p style="margin-top:-1vh; margin-left: 10vh; font-size:120%;">What's the Weather?</p>
           <h2 class="temp"></h2><p style="margin-top:-57px; margin-left:95px; color:white; font-size:170%">&degC</p>
-          <div class="cooli" style="margin-top:-1vh; margin-left: 2vh; font-size:120%;"><p style="margin-left:8px;">Pressure</p><p style="margin-left:8px;" class="pressure"></p><p style="margin-left:55px; margin-top:-40px">mb</p></div>
-          <div class="cooli" style="margin-top: -11vh; margin-left: 21vh; font-size:120%;"><p style="margin-left:8px;">Humidity</p><p style="margin-left:8px;" class="humidity"></p><p style="margin-left:35px; margin-top:-40px">km</p></div>
-          <div class="cooli" style="margin-top:-11vh; margin-left: 40vh; font-size:120%;"><p style="margin-left:8px;">Visibility</p><p style="margin-left:8px;" class="visibility"></p><p style="margin-left:55px; margin-top:-40px">%</p></div>
+          <table>
+          <tr>
+          <td><div class="cooli" style="font-size:120%;"><p style="margin-left:8px;">Pressure</p><p style="margin-left:8px;" class="pressure"></p><p style="margin-left:55px; margin-top:-40px">mb</p></div>
+          </td><td><div class="cooli" style="font-size:120%;"><p style="margin-left:8px;">Humidity</p><p class="humidity"></p><p style="margin-left:35px; margin-top:-40px">km</p></div>
+          </td><td><div class="cooli" style="font-size:120%;"><p style="margin-left:8px;">Visibility</p><p class="visibility"></p><p style="margin-left:55px; margin-top:-40px">%</p></div>
+        </td></tr>
+      </table>
         </div>
       </div>
       <div class="second">
@@ -122,13 +136,11 @@ body {
         <img src="https://img.wattpad.com/8131d7d07136c9a9214a4d43ad4626e303c64f21/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f776174747061642d6d656469612d736572766963652f53746f7279496d6167652f66514249384a6a516f43443739413d3d2d313136353138393732322e313663303034616561663634353937353633313434303830353837332e706e67" height=100% width=100%/>
       </div>
       <div class="fourth">
-        <img src="https://img.wattpad.com/6fcd8dbbd7129ab00dfc561a933b4ccaaa447163/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f776174747061642d6d656469612d736572766963652f53746f7279496d6167652f336e433349645a4e3553547167673d3d2d313136353138393732322e313663303034616433373561373365323338323935343034373235342e706e67" height=300vh width=300vh id="cool">
-        <h2 class="tomorrow" style="color:white; margin-top:70px;"></h2><p style="margin-top:-57px; margin-left:95px; color:white; font-size:170%">&degC</p>
+        <img src="https://img.wattpad.com/6fcd8dbbd7129ab00dfc561a933b4ccaaa447163/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f776174747061642d6d656469612d736572766963652f53746f7279496d6167652f336e433349645a4e3553547167673d3d2d313136353138393732322e313663303034616433373561373365323338323935343034373235342e706e67" height=100% width=100% id="cool">
       </div>
-      <p></p>
+      <h2 class="cityname" style="color:white;"></h2>
       <div class="fifth" style="margin-left:123vh; margin-top:-92.3vh;">
-        <h2 class="cityname" style="color:#fafafa; margin-top:-10vh;" ></h2>
-        <img src="https://img.wattpad.com/e471c24e715e138268053e732f5d42a6856f4feb/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f776174747061642d6d656469612d736572766963652f53746f7279496d6167652f577a58474264575241495a654e513d3d2d313136353138393732322e313663303034616164623064613164383838323830313833333933312e706e67" height=620vh width=420vh>
+        <img src="https://img.wattpad.com/e471c24e715e138268053e732f5d42a6856f4feb/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f776174747061642d6d656469612d736572766963652f53746f7279496d6167652f577a58474264575241495a654e513d3d2d313136353138393732322e313663303034616164623064613164383838323830313833333933312e706e67" height=90% width=100% id="yikes">
       </div>
     </div>
   </div>
