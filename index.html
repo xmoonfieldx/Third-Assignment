@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+
+
+<title>Weather Forecast</title>
+<style>
+body {
+  background-image: url('https://img.wattpad.com/92cab5c52efb7df8e4897b9e8847fec907693ea2/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f776174747061642d6d656469612d736572766963652f53746f7279496d6167652f6c47764651444c4a63426f6d34773d3d2d313133353737333536312e3136626666353330366366636231343832393039343435313538342e706e67');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+.myDiv {
+  margin: 15px 15px 15px 15px;
+  background-color: #0e1111; /*#fafafa;*/
+  height:95vh;
+}
+.box {
+  margin: 15px 15px 15px 125px;
+}
+.first {
+  border-radius: 25px;
+  background-color:#708090;
+  height: 35vh;
+  width:55vh;
+}
+.second {
+  border-radius: 25px;
+  background-color:#708090;
+  height: 35vh;
+  width:55vh;
+  margin-left: 60vh;
+  margin-top: -35vh;
+}
+.third {
+  background-color:#89cff0;
+  height: 40vh;
+  width:72vh;
+  margin-top:5vh;
+}
+.fourth {
+  border-radius: 12%;
+  background-color:#d0f0c0;
+  height: 40vh;
+  width:38vh;
+  margin-left: 77vh;
+  margin-top: -40vh;
+}
+.fifth {
+  height:90vh;
+  background-color:#0e1111;
+  margin-top:-92.3vh;
+  width: 58vh;
+  margin-left: 125vh;
+}
+.temp {
+  font-size:190%;
+  margin-top:-1vh;
+  margin-left: 3vh;
+  color:white
+}
+.temp_min {
+  font-size:190%;
+  margin-top:-1vh;
+  margin-left: 3vh;
+}
+.deg {
+  font-size:190%;
+  margin-top:0vh;
+  margin-left: 3vh;
+}
+#yes {
+  border-radius:50%;
+}
+#no {
+  border-radius:50%;
+  margin-top:3vh;
+  margin-left: 3vh;
+}
+#cool {
+  border-radius: 25px;
+}
+.cooli {
+  border-radius:10px;
+  height: 65px;
+  width:100px;
+  background-color: black;
+  color:white;
+}
+</style>
+</head>
+<body>
+
+  <div class="myDiv">
+    <div class="box">
+      </br>
+      <img src="https://img.wattpad.com/e4a2547943dabdff3d1f3e48a91451eb9d4e518b/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f776174747061642d6d656469612d736572766963652f53746f7279496d6167652f725649784c796d685767383445513d3d2d313133353737333536312e313662666636333436393565383962353338303932343035353739372e706e67" alt="Avatar" id="yes" height="4.5%" width="4.5%"/>
+      <p style="margin-top:-70px; margin-left:90px; font-size:150%; color:#fafafa;"><i>Hello,<br/> Maria Beagel</i></p>
+
+      <div class="first">
+        <div class="box1">
+          <img src= "https://img.wattpad.com/be00267f7b5846476912eb3a885a6157912d8e51/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f776174747061642d6d656469612d736572766963652f53746f7279496d6167652f3266396f5f5a434964304f6265773d3d2d313133353737333536312e313663303030643436346461343732623438373536393137333535362e6a7067" id="no" height=10% width=10%>
+          <p style="margin-top:-7vh; margin-left: 10vh; font-size:120%;">Weather</p>
+          <p style="margin-top:-1vh; margin-left: 10vh; font-size:120%;">What's the Weather?</p>
+          <h2 class="temp"></h2><p style="margin-top:-57px; margin-left:95px; color:white; font-size:170%">&degC</p>
+          <div class="cooli" style="margin-top:-1vh; margin-left: 2vh; font-size:120%;"><p style="margin-left:8px;">Pressure</p><p style="margin-left:8px;" class="pressure"></p><p style="margin-left:55px; margin-top:-40px">mb</p></div>
+          <div class="cooli" style="margin-top: -11vh; margin-left: 21vh; font-size:120%;"><p style="margin-left:8px;">Humidity</p><p style="margin-left:8px;" class="humidity"></p><p style="margin-left:35px; margin-top:-40px">km</p></div>
+          <div class="cooli" style="margin-top:-11vh; margin-left: 40vh; font-size:120%;"><p style="margin-left:8px;">Visibility</p><p style="margin-left:8px;" class="visibility"></p><p style="margin-left:55px; margin-top:-40px">%</p></div>
+        </div>
+      </div>
+      <div class="second">
+        <img src= "https://img.wattpad.com/03673996c24da8207bf26fb5d94c5cbb56e5bed8/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f776174747061642d6d656469612d736572766963652f53746f7279496d6167652f32577063584877326443614270673d3d2d313133353737333536312e313663303030643236643538376634343236333235353633393638312e6a7067?s=fit&w=1280&h=1280" id="no" height=18% width=12%>
+        <p style="margin-top:-7vh; margin-left: 12vh; font-size:120%;">Air Quality</p>
+        <p style="margin-top:-1vh; margin-left: 12vh; font-size:120%;">Main Pollution: PM 2.5</p>
+        <h2 class="deg" style="color:white;"></h2><p style="margin-top:-57px; margin-left:75px; color:white; font-size:170%">AQI</p>
+        <h2 class="temp_min" style="color:white;"></h2><p style="margin-top:-57px; margin-left:95px; color:white; font-size:170%">&degC is the min temp</p>
+      </div>
+      <div class="third">
+        <img src="https://img.wattpad.com/8131d7d07136c9a9214a4d43ad4626e303c64f21/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f776174747061642d6d656469612d736572766963652f53746f7279496d6167652f66514249384a6a516f43443739413d3d2d313136353138393732322e313663303034616561663634353937353633313434303830353837332e706e67" height=300vh width=537vh/>
+      </div>
+      <div class="fourth">
+        <img src="https://img.wattpad.com/6fcd8dbbd7129ab00dfc561a933b4ccaaa447163/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f776174747061642d6d656469612d736572766963652f53746f7279496d6167652f336e433349645a4e3553547167673d3d2d313136353138393732322e313663303034616433373561373365323338323935343034373235342e706e67" height=300vh width=300vh id="cool">
+        <h2 class="tomorrow" style="color:white; margin-top:70px;"></h2><p style="margin-top:-57px; margin-left:95px; color:white; font-size:170%">&degC</p>
+      </div>
+      <p></p>
+      <div class="fifth" style="margin-left:123vh; margin-top:-92.3vh;">
+        <h2 class="cityname" style="color:#fafafa; margin-top:-10vh;" ></h2>
+        <img src="https://img.wattpad.com/e471c24e715e138268053e732f5d42a6856f4feb/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f776174747061642d6d656469612d736572766963652f53746f7279496d6167652f577a58474264575241495a654e513d3d2d313136353138393732322e313663303034616164623064613164383838323830313833333933312e706e67" height=620vh width=420vh>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
